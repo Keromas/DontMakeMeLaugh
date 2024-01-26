@@ -16,5 +16,14 @@
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"s_arm","order":4,"path":"sprites/s_arm/s_arm.yy",},
+    {"name":"o_game_manager","order":2,"path":"objects/o_game_manager/o_game_manager.yy",},
+    {"name":"s_paper_ball","order":2,"path":"sprites/s_paper_ball/s_paper_ball.yy",},
+    {"name":"o_arm","order":4,"path":"objects/o_arm/o_arm.yy",},
+    {"name":"o_paper_ball","order":1,"path":"objects/o_paper_ball/o_paper_ball.yy",},
+    {"name":"s_board","order":3,"path":"sprites/s_board/s_board.yy",},
+    {"name":"s_professor","order":1,"path":"sprites/s_professor/s_professor.yy",},
+    {"name":"o_board","order":3,"path":"objects/o_board/o_board.yy",},
+  ],
 }

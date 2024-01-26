@@ -9,7 +9,7 @@
     "children": [],
     "name": "Default",
   },
-  "defaultScriptType": 0,
+  "defaultScriptType": 1,
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
@@ -34,10 +34,20 @@
     "IDEVersion": "2023.4.0.84",
   },
   "resources": [
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"s_arm","path":"sprites/s_arm/s_arm.yy",},},
+    {"id":{"name":"s_cursor","path":"sprites/s_cursor/s_cursor.yy",},},
+    {"id":{"name":"o_game_manager","path":"objects/o_game_manager/o_game_manager.yy",},},
+    {"id":{"name":"s_paper_ball","path":"sprites/s_paper_ball/s_paper_ball.yy",},},
+    {"id":{"name":"o_arm","path":"objects/o_arm/o_arm.yy",},},
+    {"id":{"name":"o_paper_ball","path":"objects/o_paper_ball/o_paper_ball.yy",},},
+    {"id":{"name":"s_board","path":"sprites/s_board/s_board.yy",},},
+    {"id":{"name":"o_professor","path":"objects/o_professor/o_professor.yy",},},
+    {"id":{"name":"s_professor","path":"sprites/s_professor/s_professor.yy",},},
+    {"id":{"name":"o_board","path":"objects/o_board/o_board.yy",},},
+    {"id":{"name":"rm_class","path":"rooms/rm_class/rm_class.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_class","path":"rooms/rm_class/rm_class.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
