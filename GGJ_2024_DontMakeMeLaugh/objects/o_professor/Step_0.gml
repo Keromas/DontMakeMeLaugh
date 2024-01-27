@@ -23,3 +23,17 @@ if x > destinationX
 }
 
 #endregion
+
+#region Patience
+
+if o_game_manager.professor_patience_current >= o_game_manager.professor_patience_max
+{
+	o_game_manager.professor_patience_current = 0;
+	image_index = 1;
+	alarm[0] = strike_time;
+	alarm[1] = delay_creation_button;
+	spd = 0;
+	
+}
+
+#endregion

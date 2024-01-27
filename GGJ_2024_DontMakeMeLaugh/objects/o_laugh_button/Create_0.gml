@@ -1,6 +1,6 @@
 fill_speed = 2;
 fill_amount = 0;
-max_fill = 100;
+max_fill = 150;
 click_fill_reducer = 10;
 life_time = 120;
 

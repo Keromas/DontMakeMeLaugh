@@ -15,7 +15,7 @@ if mouse_over == true and mouse_check_button_pressed(mb_left)
 if fill_amount >= max_fill
 {
 	instance_destroy();
-	show_debug_message("fail");
+	room_goto(rm_punish_room);
 }
 
 bump();
