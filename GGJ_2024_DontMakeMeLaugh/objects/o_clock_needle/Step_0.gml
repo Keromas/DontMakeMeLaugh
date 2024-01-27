@@ -1,0 +1,1 @@
+image_angle -= o_clock.time_speed / 10;
