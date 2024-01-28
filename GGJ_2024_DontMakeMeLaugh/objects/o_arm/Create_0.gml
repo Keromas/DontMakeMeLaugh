@@ -1,5 +1,6 @@
-shoot_cooldown = 20;
+shoot_cooldown = 25;
 can_shoot = true;
+ball_is_rolling = false;
 
 my_projectile = noone;
 

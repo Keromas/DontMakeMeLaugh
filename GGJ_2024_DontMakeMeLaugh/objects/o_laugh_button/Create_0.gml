@@ -9,11 +9,12 @@ life_time = 60 * 2;
 	life_time = 60 * 4;
 }*/
 
-can_fill = true;
+can_fill = false;
+lock = true;
 
 mouse_over = false;
 
-alarm[0] = life_time;
+//alarm[0] = life_time;
 
 //bump
 can_bump = false;

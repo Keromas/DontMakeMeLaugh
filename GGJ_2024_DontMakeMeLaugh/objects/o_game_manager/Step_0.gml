@@ -6,6 +6,15 @@
 if keyboard_check_pressed(vk_shift)
 	room_goto(rm_punish_room);*/
 	
+if keyboard_check_pressed(vk_escape) and room != rm_main_menu
+{
+	var _target = rm_main_menu;
+	transitionRoomStart(_target, sq_roomTransOut, sq_roomTransIn);
+	o_game_manager.inTransition = true;
+
+	alarm[4] = 50;
+}
+	
 if inTransition == true
 {
 	cursor_sprite = noone;

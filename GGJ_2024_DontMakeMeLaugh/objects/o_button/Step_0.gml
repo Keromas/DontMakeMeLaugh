@@ -11,6 +11,7 @@ switch (index)
 
 if mouse_check_button_pressed(mb_left) and mouse_over == true
 {
+	audio_play_sound(snd_display_score, 10, false, 1.5);
 	switch (index)
 	{
 		case QUIT_BUTTON:

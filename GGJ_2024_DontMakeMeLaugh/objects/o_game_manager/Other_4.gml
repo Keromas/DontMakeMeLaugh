@@ -5,6 +5,7 @@ if(room == rm_punish_room)
 	o_clock.time_current = game_time_current;
 	o_clock_needle.image_angle = needle_angle;
 	alarm[0] = punish_time;
+	audio_play_sound(snd_punish_room_music, 1, true, 0.4);
 }
 
 if(room == rm_class)

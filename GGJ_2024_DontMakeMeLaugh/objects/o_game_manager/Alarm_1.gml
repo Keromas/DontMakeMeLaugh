@@ -4,6 +4,7 @@ if point_final_current < player_score
 	point_final_current++;
 	alarm[1] = 7;
 	var _point = instance_create_depth(_startX + _offsetX, _startY + _offsetY, -100, o_final_point);
+	audio_play_sound(snd_display_score, 10, false, 1.5);
 	_offsetX += 35;
 	if point_final_current % 10 == 0
 	{

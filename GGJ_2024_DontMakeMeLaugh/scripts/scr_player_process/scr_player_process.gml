@@ -57,6 +57,9 @@ function shoot()
 
 function launch_projectile()
 {
+	ball_is_rolling = true;
+	show_debug_message("throw ball");
+	audio_play_sound(snd_throw_paper_ball, 10, false);
 	instance_create_depth(x, y, depth + 1, o_speed_effect);
 	with(my_projectile)
 	{

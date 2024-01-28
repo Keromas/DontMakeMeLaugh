@@ -13,8 +13,9 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7e25b9e3-c2a4-46ae-9d89-9a43ba81c4aa",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b6524f90-f5c5-4680-9289-49191017e37d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1e8f7375-c31d-4be8-acd3-47958c45e5ea",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"22071519-bc46-4c7e-8403-7a7e0f359d65",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e0046b8d-0b42-43e4-98ed-f5518554ebe2",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -44,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,8 +56,9 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7e25b9e3-c2a4-46ae-9d89-9a43ba81c4aa","path":"sprites/s_laugh_button/s_laugh_button.yy",},},},"Disabled":false,"id":"564b47f8-9ad4-4eaa-8a1a-9f326b34a448","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b6524f90-f5c5-4680-9289-49191017e37d","path":"sprites/s_laugh_button/s_laugh_button.yy",},},},"Disabled":false,"id":"086089df-19c0-404d-af12-c81f4a91a0e0","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1e8f7375-c31d-4be8-acd3-47958c45e5ea","path":"sprites/s_laugh_button/s_laugh_button.yy",},},},"Disabled":false,"id":"ac18cf55-cd13-4f31-8baf-5715dfc4a6f8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"22071519-bc46-4c7e-8403-7a7e0f359d65","path":"sprites/s_laugh_button/s_laugh_button.yy",},},},"Disabled":false,"id":"9de33fb2-10d4-45e6-8e74-62eda37afcae","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e0046b8d-0b42-43e4-98ed-f5518554ebe2","path":"sprites/s_laugh_button/s_laugh_button.yy",},},},"Disabled":false,"id":"d5e865d4-9487-495a-8404-8e188ec83727","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

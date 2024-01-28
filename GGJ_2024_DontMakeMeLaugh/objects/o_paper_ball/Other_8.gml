@@ -1,6 +1,8 @@
 ///@description score points
 var _score_increase = 0;
 
+audio_play_sound(snd_paper_ball_contact, 10, false, 1, 0.60);
+
 #region Professor patience and score increase according to distance
 
 var _dist_to_professor = point_distance(x, y, o_professor.x, o_professor.y);

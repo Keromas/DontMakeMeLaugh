@@ -1,7 +1,8 @@
 //Put the textbox in front of everything
 depth = -999;
 
-scr_txtBoxInit(ft_dialogues, 600, 110, 15, 40, s_dialogue_background, 6/60, 0.5);
+scr_txtBoxInit(ft_dialogues, 700, 110, 15, 40, s_dialogue_background, 6/60, 0.5);
+audio_play_sound(snd_dialogue, 10, false, 0.5, 0, 2);
 
 //Set font
 //global.font_main = fDialogue;

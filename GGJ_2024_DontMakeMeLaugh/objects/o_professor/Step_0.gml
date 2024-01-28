@@ -36,8 +36,18 @@ if o_game_manager.professor_patience_current >= o_game_manager.professor_patienc
 	is_striking = true;
 	spd = 0;
 	instance_create_depth(x + 20, y - 175, depth - 1, o_professor_eye_flash);
+	
+	var _laugh_button = instance_create_depth(room_width / 2, room_height - 300, -100, o_laugh_button);
+	_laugh_button.life_time = strike_time;
+
+	/*if o_game_manager.has_played_tutorial02 == false
+	{
+		o_game_manager.has_played_tutorial02 = true;
+	}*/
+	
 	if o_game_manager.has_played_tutorial02 == false
 	{
+		o_game_manager.has_played_tutorial02 = true;
 		instance_create_layer(x, y, "Instances", o_textbox_tutorial2);
 	}
 	else
