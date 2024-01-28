@@ -43,35 +43,32 @@ else if _dist_to_professor > o_professor.distance_zone_far
 alarm[1] = 60;
 
 //Add new visual point
-var _image_left = -(o_game_manager.point_current.image_index - (o_game_manager.point_current.image_number - 1));
-if _score_increase > _image_left
-{
-	var _catch_late = _score_increase - _image_left;
-	o_game_manager.point_offsetX += 30;
-	o_game_manager.point_current.image_index = o_game_manager.point_current.image_number-1;
-	var _inst = instance_create_depth((room_width / 2 + 20) + o_game_manager.point_offsetX, room_height - 120 + o_game_manager.point_offsetY, -100, o_point);
-	o_game_manager.point_current = _inst;
-	o_game_manager.point_current.image_index += _catch_late-1;
-	show_debug_message("create new point square");
-	show_debug_message(o_game_manager.player_score);
-}
-else if instance_exists(o_game_manager.point_current)
-{
-	o_game_manager.point_current.image_index += _score_increase;
-	show_debug_message("update current point square");
-	show_debug_message(o_game_manager.player_score);
-}
 
-if o_game_manager.temp_score / 20 >= 1
+if o_game_manager.temp_score / 25 >= 1
 {
 	o_game_manager.temp_score = 0;
 	o_game_manager.point_offsetY += 25;
 	o_game_manager.point_offsetX = -30;
 }
 
-//Add visual point old
-
-//instance_create_depth((room_width / 2 + 50) + o_game_manager.point_offsetX, room_height - 170 + o_game_manager.point_offsetY, -100, o_point);
+var _image_left = -(o_game_manager.point_current.image_index - (o_game_manager.point_current.image_number - 1));
+if _score_increase > _image_left
+{
+	var _catch_late = _score_increase - _image_left;
+	o_game_manager.point_offsetX += 30;
+	o_game_manager.point_current.image_index = o_game_manager.point_current.image_number-1;
+	var _inst = instance_create_depth((room_width / 2 + 20) + o_game_manager.point_offsetX, room_height - 130 + o_game_manager.point_offsetY, -100, o_point);
+	o_game_manager.point_current = _inst;
+	o_game_manager.point_current.image_index += _catch_late-1;
+	//show_debug_message("create new point square");
+	//show_debug_message(o_game_manager.player_score);
+}
+else if instance_exists(o_game_manager.point_current)
+{
+	o_game_manager.point_current.image_index += _score_increase;
+	//show_debug_message("update current point square");
+	//show_debug_message(o_game_manager.player_score);
+}
 
 //destroy path
 path_delete(my_path);

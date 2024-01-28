@@ -33,6 +33,6 @@ _offsetY = 0;
 //Instanciate first point displayer
 if !instance_exists(o_point)
 {
-	var _point_first = instance_create_depth((room_width / 2 + 20) + point_offsetX, room_height - 120 + point_offsetY, -100, o_point);
+	var _point_first = instance_create_depth((room_width / 2 + 20) + point_offsetX, room_height - 130 + point_offsetY, -100, o_point);
 	point_current = _point_first;
 }

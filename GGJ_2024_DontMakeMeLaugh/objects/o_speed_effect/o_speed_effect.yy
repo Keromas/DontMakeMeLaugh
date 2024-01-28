@@ -1,15 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_background_class_light",
+  "name": "o_speed_effect",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Background",
-    "path": "folders/Objects/Background.yy",
+    "name": "UI",
+    "path": "folders/Objects/UI.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_background_class_light",
-    "path": "sprites/s_background_class_light/s_background_class_light.yy",
+    "name": "s_speed_effect",
+    "path": "sprites/s_speed_effect/s_speed_effect.yy",
   },
   "spriteMaskId": null,
   "visible": true,

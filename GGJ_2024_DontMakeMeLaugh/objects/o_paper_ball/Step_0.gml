@@ -27,7 +27,7 @@ if path_position >= 0.01
 //Acceleration
 if path_position <= 0.4
 {
-	path_speed = 70;
+	path_speed = acceleration_spd;
 }
 else
 	path_speed = 40;

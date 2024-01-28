@@ -6,17 +6,9 @@ function shoot()
 		{
 			image_speed = 1;
 			can_shoot = false;
-			//var _projectile_spd = set_power();
-			//var _projectile_hit_timer = set_hit_timer();
-			//var _projectile_shrink_modifier = set_hit_timer();
-			//var _projectile_angle_modifier = set_angle_modifier();
 			var _projectile = instance_create_depth(x, y, -100, o_paper_ball);
 			my_projectile = _projectile;
-			//_projectile.dir = point_direction(x, y, mouse_x, mouse_y) - _projectile_angle_modifier;
-			//_projectile.spd = _projectile_spd;
-			//_projectile.hit_timer = _projectile_hit_timer;
-			//_projectile.shrink_modifier = _projectile_shrink_modifier;
-			// Définir les positions de départ et d'arrivée
+			
 			var _start_x = x;
 			var _start_y = y;
 			var _end_x = mouse_x;
@@ -31,8 +23,22 @@ function shoot()
 			path_add_point(_path, _start_x, _start_y, _projectile.spd);
 		
 			// Ajouter un point de contrôle pour créer une courbe
-			var _control_x = (_start_x + _end_x) / 2; // Ajuste ces valeurs selon tes besoins
-			var _control_y = min(_start_y, _end_y) - 170;
+			var _dist = point_distance(_projectile.x, _projectile.y, mouse_x, mouse_y);
+			show_debug_message(_dist);
+			var _control_point_divider = 2;
+			var _control_point_y_remover = 170;
+			if _dist > 500
+			{
+				_control_point_divider = 2.2;
+				_control_point_y_remover = 210;
+			}
+			if _dist > 700
+			{
+				_control_point_divider = 2.3;
+				_control_point_y_remover = 250;
+			}
+			var _control_x = (_start_x + _end_x) / _control_point_divider; // Ajuste ces valeurs selon tes besoins
+			var _control_y = min(_start_y, _end_y) - _control_point_y_remover;
 			path_add_point(_path, _control_x, _control_y, _projectile.spd);
 
 			// Ajouter le point d'arrivée au path
@@ -49,6 +55,7 @@ function shoot()
 
 function launch_projectile()
 {
+	instance_create_depth(x, y, depth + 1, o_speed_effect);
 	with(my_projectile)
 	{
 		if path_position <= 0.01

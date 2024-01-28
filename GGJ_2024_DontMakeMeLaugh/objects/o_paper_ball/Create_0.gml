@@ -1,5 +1,14 @@
 grav = 0.8;
+
+/*var _dist = point_distance(x, y, mouse_x, mouse_y);
+var _spd_taux_augmentation = 0.01;
+var _vitesse_base = 40;
+spd = _vitesse_base + (_dist * _spd_taux_augmentation);*/
 spd = 40;
+acceleration_spd = (spd * 2) - (spd * 25 / 100);
+//show_debug_message(acceleration_spd);
+
+
 grav_direction = 270;
 dir = 0; //to be define on creation
 shrink_modifier = 0.022;
