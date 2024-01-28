@@ -23,4 +23,3 @@ distance_zone_far = 200;
 patience_increaser_huge = 3;
 patience_increaser_small = 1;
 patience_increaser_chance = 40;
-

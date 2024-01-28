@@ -46,9 +46,15 @@ function scr_txtBoxDrawDialogue()
 			draw_char += text_spd;
 			draw_char = clamp(draw_char,0,text_length[page]);
 		}
-
-		if(accept_key)
+		else
 		{
+			if alarm[0] <= 0
+				alarm[0] = 60 * 2;
+		}
+
+		if can_change_dialogue == true
+		{
+			can_change_dialogue = false;
 			if(draw_char == text_length[page])
 			{
 				if(page < page_number -1)

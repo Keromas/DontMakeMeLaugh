@@ -8,7 +8,12 @@ if(room == rm_punish_room)
 
 if(room == rm_class)
 {
-	cursor_sprite = s_target_ursor;
+	cursor_sprite = s_target_cursor;
+	if has_played_tutorial01 == false
+	{
+		instance_create_layer(x, y, "Instances", o_textbox_tutorial1);
+		has_played_tutorial01 = true;
+	}
 }
 
 if(room == rm_main_menu)

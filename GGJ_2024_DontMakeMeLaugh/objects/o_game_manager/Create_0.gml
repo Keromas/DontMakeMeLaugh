@@ -13,6 +13,10 @@ point_offsetX = 0;
 point_offsetY = 0;
 punish_time = 60 * 5;
 
+//Tutorial
+has_played_tutorial01 = false;
+has_played_tutorial02 = false;
+
 //Professor
 professor_patience_max = 5;
 professor_patience_current = 0;

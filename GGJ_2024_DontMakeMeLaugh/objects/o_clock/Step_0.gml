@@ -1,10 +1,15 @@
-time_current += time_speed;
-o_game_manager.game_time_current += time_speed;
 
-if time_current >= time_max
+if !instance_exists(o_textbox_parent)
 {
-	with (o_game_manager)
+	time_current += time_speed;
+	o_game_manager.game_time_current += time_speed;
+
+
+	if time_current >= time_max
 	{
-		event_user(0);
+		with (o_game_manager)
+		{
+			event_user(0);
+		}
 	}
 }

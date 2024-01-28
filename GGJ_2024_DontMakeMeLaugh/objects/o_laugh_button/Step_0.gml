@@ -1,5 +1,5 @@
 
-if can_fill == true
+if can_fill == true and !instance_exists(o_textbox_parent)
 {
 	if fill_amount <= max_fill
 		fill_amount += fill_speed;
