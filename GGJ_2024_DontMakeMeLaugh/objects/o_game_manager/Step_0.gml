@@ -1,7 +1,14 @@
-if keyboard_check_pressed(vk_space)
+/*if keyboard_check_pressed(vk_space)
 {
 	instance_create_layer(mouse_x, mouse_y, "Instances", o_laugh_button);
 }
 
 if keyboard_check_pressed(vk_shift)
-	room_goto(rm_punish_room);
+	room_goto(rm_punish_room);*/
+	
+if inTransition == true
+{
+	cursor_sprite = noone;
+}
+else
+	cursor_sprite = cursor_display;

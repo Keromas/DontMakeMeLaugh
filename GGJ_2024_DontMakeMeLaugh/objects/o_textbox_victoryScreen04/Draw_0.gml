@@ -4,7 +4,7 @@
 accept_key = keyboard_check_pressed(ord("F"));
 
 //location in x of the textbox
-textbox_x = 600;
+textbox_x = 180;
 //location in y of the textbox
 textbox_y = 800;
 
@@ -27,7 +27,7 @@ if(!setup)
 	}
 	
 }*/
-scr_txtBoxDrawDialogue();
+scr_txtBoxDrawDialogue(6);
 /*
 if setup == true
 {

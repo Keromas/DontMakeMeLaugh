@@ -37,7 +37,7 @@ function scr_txtBoxfirstSetup(valign, halign, txt_x_offset)
 	}
 }
 
-function scr_txtBoxDrawDialogue()
+function scr_txtBoxDrawDialogue(_second_life)
 {
 	if setup == true
 	{
@@ -49,7 +49,7 @@ function scr_txtBoxDrawDialogue()
 		else
 		{
 			if alarm[0] <= 0
-				alarm[0] = 60 * 2;
+				alarm[0] = 60 * _second_life;
 		}
 
 		if can_change_dialogue == true

@@ -1,4 +1,4 @@
-shoot_cooldown = 45;
+shoot_cooldown = 20;
 can_shoot = true;
 
 my_projectile = noone;

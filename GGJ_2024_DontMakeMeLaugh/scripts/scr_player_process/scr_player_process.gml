@@ -68,7 +68,10 @@ function launch_projectile()
 function spawn_laugh(_type)
 {
 	var _odds = irandom_range(0, 100);
-	if _odds < 40 //une chance sur quatre
+	var _chance = 40;
+	if _type = o_text_hi
+		_chance = 20;
+	if _odds < _chance //une chance sur quatre
 	{
 		var _side = choose(0, 1);
 		var _x, _y, _minX, _maxX, _minY, _maxY, _dir, _length;

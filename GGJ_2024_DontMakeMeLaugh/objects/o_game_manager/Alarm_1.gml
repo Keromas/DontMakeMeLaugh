@@ -12,4 +12,13 @@ if point_final_current < player_score
 	}
 }
 else
+{
 	is_displaying_score = false;
+	alarm[3] = 60 * 2;
+}
+
+if !instance_exists(o_textbox_parent)
+{
+	var _victory_text = choose(o_textbox_victoryScreen01, o_textbox_victoryScreen02, o_textbox_victoryScreen03, o_textbox_victoryScreen04);
+	instance_create_layer(x, y, "Instances", _victory_text);
+}

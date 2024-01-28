@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "s_background_class_light",
-  "bbox_bottom": 200,
-  "bbox_left": 879,
-  "bbox_right": 1080,
+  "bbox_bottom": 230,
+  "bbox_left": 851,
+  "bbox_right": 1105,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f825d5fe-96a7-4dea-99c8-4f66f294493b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"11255924-74ad-43f2-ba89-f85ad03f6e65",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 1080,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"17f56b91-4da2-4cd0-8b43-4886904040ad","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a2517e12-e58b-4516-b7de-eca39d07f809","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f825d5fe-96a7-4dea-99c8-4f66f294493b","path":"sprites/s_background_class_light/s_background_class_light.yy",},},},"Disabled":false,"id":"2feb8f15-4961-4745-91ba-252ba13bfdf9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"11255924-74ad-43f2-ba89-f85ad03f6e65","path":"sprites/s_background_class_light/s_background_class_light.yy",},},},"Disabled":false,"id":"19866e2f-fd33-45ce-9710-84783657ac6a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -1,7 +1,7 @@
 #macro LEFT 0
 #macro RIGHT 1
 
-spd = 2;
+spd = 1.25;
 dir = 0;
 
 originalX = x - 150;

@@ -4,9 +4,9 @@
 accept_key = keyboard_check_pressed(ord("F"));
 
 //location in x of the textbox
-textbox_x = 600;
+textbox_x = 80;
 //location in y of the textbox
-textbox_y = 800;
+textbox_y = 60;
 
 draw_set_color(c_white);
 
@@ -27,7 +27,7 @@ if(!setup)
 	}
 	
 }*/
-scr_txtBoxDrawDialogue();
+scr_txtBoxDrawDialogue(6);
 /*
 if setup == true
 {

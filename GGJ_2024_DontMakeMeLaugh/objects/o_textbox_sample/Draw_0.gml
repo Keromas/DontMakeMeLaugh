@@ -27,7 +27,7 @@ if(!setup)
 	}
 	
 }*/
-scr_txtBoxDrawDialogue();
+scr_txtBoxDrawDialogue(2);
 /*
 if setup == true
 {
