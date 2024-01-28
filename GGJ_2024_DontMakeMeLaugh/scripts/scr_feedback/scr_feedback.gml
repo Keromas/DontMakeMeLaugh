@@ -4,6 +4,19 @@ function bump()
 	image_yscale = lerp(image_yscale, 1, 0.15);
 }
 
+function fade_out_to_destroy(_alpha_decrease_speed)
+{
+	if can_fade_out == true
+	{
+		image_alpha -= _alpha_decrease_speed;
+	}
+
+	if image_alpha <= 0
+	{
+		instance_destroy();
+	}
+}
+
 function draw_pie(x ,y ,value, _max, colour, radius, transparency)
 {
 	if (value > 0)

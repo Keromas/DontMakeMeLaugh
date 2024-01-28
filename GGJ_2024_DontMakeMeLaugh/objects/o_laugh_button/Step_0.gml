@@ -12,6 +12,7 @@ if mouse_over == true and mouse_check_button_pressed(mb_left)
 	fill_amount -= click_fill_reducer;
 	image_index = 1;
 	alarm[1] = 15;
+	spawn_laugh(o_text_hi);
 }
 
 if fill_amount >= max_fill

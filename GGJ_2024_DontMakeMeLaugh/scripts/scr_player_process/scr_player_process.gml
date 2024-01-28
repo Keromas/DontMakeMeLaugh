@@ -24,7 +24,7 @@ function shoot()
 		
 			// Ajouter un point de contrôle pour créer une courbe
 			var _dist = point_distance(_projectile.x, _projectile.y, mouse_x, mouse_y);
-			show_debug_message(_dist);
+			//show_debug_message(_dist);
 			var _control_point_divider = 2;
 			var _control_point_y_remover = 170;
 			if _dist > 500
@@ -49,6 +49,8 @@ function shoot()
 			// Assure-toi de détruire le path lorsque tu n'en as plus besoin
 			//path_delete(_path);
 			alarm[0] = shoot_cooldown;
+			
+			spawn_laugh(o_text_ha);
 		}
 	}
 }
@@ -60,6 +62,51 @@ function launch_projectile()
 	{
 		if path_position <= 0.01
 			path_start(my_path, spd, path_action_stop, false);
+	}
+}
+
+function spawn_laugh(_type)
+{
+	var _odds = irandom_range(0, 100);
+	if _odds < 40 //une chance sur quatre
+	{
+		var _side = choose(0, 1);
+		var _x, _y, _minX, _maxX, _minY, _maxY, _dir, _length;
+		switch (_side)
+		{
+			case 0:
+				_minX = 200;
+				_maxX = 600;
+				_minY = 300;
+				_maxY = 500;
+				_x = random_range(_minX, _maxX);
+				_y = random_range(_maxY, _maxY);
+				_dir = 70;
+				break;
+			case 1:
+				_minX = 1400;
+				_maxX = 1720;
+				_minY = 300;
+				_maxY = 400;
+				_x = random_range(_minX, _maxX);
+				_y = random_range(_maxY, _maxY);
+				_dir = 110;
+				break;
+		}
+		switch (_type)
+		{
+			case o_text_ha:
+				_length = choose(s_text_ha_long, s_text_ha_short);
+				break;
+			case o_text_hi:
+				_length = choose(s_text_hi_long, s_text_hi_short);
+				break;
+		}
+		
+		var _laugh = instance_create_depth(_x, _y, depth + 1, _type);
+		_laugh.side = _side;
+		_laugh.dir = _dir;
+		_laugh.sprite_index = _length;
 	}
 }
 
