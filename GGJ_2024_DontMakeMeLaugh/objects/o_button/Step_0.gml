@@ -17,7 +17,9 @@ if mouse_check_button_pressed(mb_left) and mouse_over == true
 			game_end();
 			break;
 		case PLAY_BUTTON:
-			room_goto(rm_class);
+			var _target = rm_class;
+			transitionRoomStart(_target, sq_roomTransOut, sq_roomTransIn);
+			o_game_manager.inTransition = true;
 			break;
 	}
 }

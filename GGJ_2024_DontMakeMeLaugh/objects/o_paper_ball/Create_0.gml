@@ -12,3 +12,9 @@ can_fade_out = false;
 gravity_direction = grav_direction;
 
 alarm[0] = 1;
+
+image_angle = random_range(0, 360);
+
+//particules
+fade_time = 1
+fade_timer = fade_time;

@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_point",
-    "path": "sprites/s_point/s_point.yy",
+    "name": "s_point_square",
+    "path": "sprites/s_point_square/s_point_square.yy",
   },
   "spriteMaskId": null,
   "visible": true,

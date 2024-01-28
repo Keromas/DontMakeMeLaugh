@@ -1,15 +1,17 @@
 function shoot()
 {
-	if can_shoot == true
+	if can_shoot == true && o_professor.is_striking == false
 	{
 		if mouse_check_button_pressed(mb_left) and place_meeting(mouse_x, mouse_y, o_board)
 		{
+			image_speed = 1;
 			can_shoot = false;
 			//var _projectile_spd = set_power();
 			//var _projectile_hit_timer = set_hit_timer();
 			//var _projectile_shrink_modifier = set_hit_timer();
 			//var _projectile_angle_modifier = set_angle_modifier();
 			var _projectile = instance_create_depth(x, y, -100, o_paper_ball);
+			my_projectile = _projectile;
 			//_projectile.dir = point_direction(x, y, mouse_x, mouse_y) - _projectile_angle_modifier;
 			//_projectile.spd = _projectile_spd;
 			//_projectile.hit_timer = _projectile_hit_timer;
@@ -37,14 +39,20 @@ function shoot()
 			path_add_point(_path, _end_x, _end_y, _projectile.spd);
 
 			_projectile.my_path = _path;
-			with(_projectile)
-			{
-				path_start(my_path, spd, path_action_stop, false);
-			}
+			
 			// Assure-toi de détruire le path lorsque tu n'en as plus besoin
 			//path_delete(_path);
 			alarm[0] = shoot_cooldown;
 		}
+	}
+}
+
+function launch_projectile()
+{
+	with(my_projectile)
+	{
+		if path_position <= 0.01
+			path_start(my_path, spd, path_action_stop, false);
 	}
 }
 

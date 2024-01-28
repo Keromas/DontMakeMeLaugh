@@ -30,5 +30,5 @@
     "path": "sprites/s_board/s_board.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

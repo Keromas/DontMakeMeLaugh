@@ -12,6 +12,7 @@ destinationY = y;
 
 side = LEFT;
 
+is_striking = false;
 strike_time = 60 * 3;
 delay_creation_button = 30;
 
@@ -22,3 +23,4 @@ distance_zone_far = 200;
 patience_increaser_huge = 3;
 patience_increaser_small = 1;
 patience_increaser_chance = 40;
+

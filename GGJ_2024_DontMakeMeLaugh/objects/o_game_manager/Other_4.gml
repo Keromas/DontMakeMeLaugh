@@ -15,3 +15,10 @@ if(room == rm_main_menu)
 {
 	cursor_sprite = s_hand_cursor;
 }
+
+if(room == rm_score_screen)
+{
+	//display_final_score();
+	is_displaying_score = true;
+	alarm[1] = 60;
+}
