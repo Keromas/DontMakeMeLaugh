@@ -15,12 +15,22 @@ if mouse_check_button_pressed(mb_left) and mouse_over == true
 	switch (index)
 	{
 		case QUIT_BUTTON:
-			game_end();
+			if os_browser != browser_not_a_browser
+			{
+				window_set_fullscreen(false);
+			}
+			else
+				game_end();
 			break;
 		case PLAY_BUTTON:
 			var _target = rm_class;
 			transitionRoomStart(_target, sq_roomTransOut, sq_roomTransIn);
 			o_game_manager.inTransition = true;
+			if os_browser != browser_not_a_browser
+			{
+				room_goto(_target);
+				o_game_manager.inTransition = false;
+			}
 			break;
 	}
 }

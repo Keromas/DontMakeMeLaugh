@@ -8,5 +8,11 @@ if can_fade_out == true
 if image_alpha <= 0
 {
 	instance_destroy();
-	transitionRoomStart(rm_main_menu, sq_roomTransOut, sq_roomTransIn);
+	var _target = rm_main_menu;
+	transitionRoomStart(_target, sq_roomTransOut, sq_roomTransIn);
+	if os_browser != browser_not_a_browser
+	{
+		room_goto(_target);
+		//o_game_manager.inTransition = false;
+	}
 }
